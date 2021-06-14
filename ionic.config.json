@@ -1,0 +1,7 @@
+{
+  "name": "Space4X",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

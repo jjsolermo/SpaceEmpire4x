@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Space4X",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
