@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './InputFiled.css';
 
 interface ContainerProps {
@@ -7,11 +7,18 @@ interface ContainerProps {
   }
 
 
-  const InputFiled: React.FC<ContainerProps> = ({ name ,value}) => {
+  const InputFiled: React.FC<ContainerProps> = (name , value) => {
+
+    const [inputValue, setInputValue] = useState(value); // ''
+
+    const handleInputChange = ( ) => {
+        setInputValue( inputValue );
+    }
+
     return (
       <div className="container">
         <strong>{name}</strong>
-        <input type="number"></input>
+        <input type="number" value={ inputValue } onChange={ handleInputChange }></input>
       </div>
     );
   };

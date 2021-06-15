@@ -4,7 +4,10 @@ import InputFiled from '../components/inputs/InputFiled'
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
-  const total = 0;
+  const carry_Over = 0;
+  const colonies = 0;
+  const minerals = 0;
+  const pipeLine = 0;
 
   return (
     <IonPage>
@@ -20,19 +23,19 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <div className="carry">
-        <InputFiled name="Carry Over" value={0}></InputFiled>
+        <InputFiled name="Carry Over" value={carry_Over}></InputFiled>
         </div>
         <div className="colonies">
-        <InputFiled name="+ Colonies" value={0}></InputFiled>
+        <InputFiled name="+ Colonies" value={colonies}></InputFiled>
         </div>
         <div className="minerals">
-        <InputFiled name="+ Minerals" value={0}></InputFiled>
+        <InputFiled name="+ Minerals" value={minerals}></InputFiled>
         </div>
         <div className="pipe">
-        <InputFiled name="+ Ms PipeLine" value={0}></InputFiled>
+        <InputFiled name="+ Ms PipeLine" value={pipeLine}></InputFiled>
         </div>
         <div className="total">
-          <strong>TOTAL : {total}</strong>
+          <strong>TOTAL : {colonies + carry_Over +minerals + pipeLine}</strong>
         </div>
         <div className="maintenance">
         <InputFiled name="- Maintenance" value={0}></InputFiled>
