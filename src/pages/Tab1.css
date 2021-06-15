@@ -1,0 +1,27 @@
+.carry{
+    margin-top: 3em;
+    position: relative;
+}
+.colonies{
+    margin-top: 6em;
+    position: relative;
+}
+.minerals{
+    margin-top: 9em;
+    position: relative;
+}
+.pipe{
+    margin-top: 12em;
+    margin-right: 2em;
+    position: relative;
+}
+.total{
+    background-color: gray;
+    margin-top: 15em;
+    text-align: center;
+}
+.maintenance{
+    margin-right: 2em;
+    margin-top: 3em;
+    position: relative;
+}

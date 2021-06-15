@@ -1,0 +1,8 @@
+input{
+    width: 5em;
+    text-align: right;
+}
+strong{
+    font-size: 18px;
+    margin-right: 1em;
+}
