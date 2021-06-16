@@ -1,13 +1,17 @@
 import React , {useState} from 'react';
 import './InputFiled.css';
 
-interface ContainerProps {
+interface IContainerProps {
     name: string;
     value:number;
   }
 
 
-  const InputFiled: React.FC<ContainerProps> = (name , value) => {
+  const InputFiled: React.FC<IContainerProps> = (props : IContainerProps) => {
+    const{
+      name,
+      value
+    } = props;
 
     const [inputValue, setInputValue] = useState(value); // ''
 
