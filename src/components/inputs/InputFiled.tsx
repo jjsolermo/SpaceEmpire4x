@@ -1,24 +1,23 @@
 import React , {useState} from 'react';
 import './InputFiled.css';
 
-interface ContainerProps {
+interface IContainerProps {
     name: string;
     value:number;
+    passValue:any;
   }
 
 
-  const InputFiled: React.FC<ContainerProps> = (name , value) => {
-
-    const [inputValue, setInputValue] = useState(value); // ''
-
-    const handleInputChange = ( ) => {
-        setInputValue( inputValue );
-    }
-
+  const InputFiled: React.FC<IContainerProps> = (props) => {
+ 
+    const onChange = e => {
+      props.passValue(e.value);
+    };
+  
     return (
       <div className="container">
-        <strong>{name}</strong>
-        <input type="number" value={ inputValue } onChange={ handleInputChange }></input>
+        <strong>{props.name}</strong>
+        <input type="number" min={0} value={props.value}  onChange={onChange}></input>
       </div>
     );
   };
